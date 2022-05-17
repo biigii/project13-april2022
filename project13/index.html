@@ -8,35 +8,15 @@
         <link rel="stylesheet" href="./assets/stlyes.css" />
         <script src="./assets/main.js" defer></script>
     </head>
-    <body>
-        <header>
-            <a href="">home</a>
-            <a href="">about</a>
-            <a href="">contact</a>
-        </header>
-
-        <main>
-            <aside></aside>
-            <article>
-                <section>
-                    <img src="https://picsum.photos/id/1060/400/200" alt="" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta consequatur unde suscipit similique, quo sapiente ratione cum sit soluta tenetur optio, praesentium, neque magni placeat reiciendis tempore eum esse.</p>
-                </section>
-                <section>
-                    <img src="https://picsum.photos/id/1061/400/200" alt="" />
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, alias! Ut reiciendis delectus nostrum aut. Dolorem nobis quasi eos fugiat ipsam, repellendus reprehenderit impedit, corrupti maxime possimus vitae sit voluptatem?</p>
-                </section>
-                <section>
-                  <img src="https://picsum.photos/id/1062/400/200" alt="" />
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta consequatur unde suscipit similique, quo sapiente ratione cum sit soluta tenetur optio, praesentium, neque magni placeat reiciendis tempore eum esse.</p>
-              </section>
-              <section>
-                  <img src="https://picsum.photos/id/1063/400/200" alt="" />
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, alias! Ut reiciendis delectus nostrum aut. Dolorem nobis quasi eos fugiat ipsam, repellendus reprehenderit impedit, corrupti maxime possimus vitae sit voluptatem?</p>
-              </section>
-            </article>
-        </main>
-
-        <footer></footer>
+    <body onresize="screenResized()">
+      <div id="text"></div>
+      <figure data-photo id="image"></figure>
+        <h1 id="heading" data-heading>javascript</h1>
+        <button id="button">click me</button>
+        <button data-btn>second button</button>
+        <hr>
+        <button onclick="changeBackgroundColor()">change background color</button>
+        <button onclick="createAnotherNewElement()">another button to click</button>
+        <button ondblclick="toggleBackground()">toggle body color</button> 
     </body>
 </html>
